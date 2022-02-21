@@ -17,26 +17,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="je7-nW-oy1">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="n2i-pZ-r05"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WO5-Rn-ch7"/>
                                 </connections>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axt-KP-Xm3">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="efi-Nh-3d0"/>
+                                    <barButtonItem title="Создать контакт" id="mDc-6U-xws">
+                                        <connections>
+                                            <action selector="showNewContactAlert" destination="BYZ-38-t0r" id="DV1-Ej-Emm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Axt-KP-Xm3" firstAttribute="top" secondItem="je7-nW-oy1" secondAttribute="bottom" id="0hj-Px-hN5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="je7-nW-oy1" secondAttribute="trailing" id="LBY-eD-75I"/>
+                            <constraint firstItem="Axt-KP-Xm3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dn2-N8-M3u"/>
+                            <constraint firstItem="Axt-KP-Xm3" firstAttribute="top" secondItem="je7-nW-oy1" secondAttribute="bottom" id="fJB-6a-neT"/>
+                            <constraint firstItem="Axt-KP-Xm3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kee-V3-Ui6"/>
                             <constraint firstItem="je7-nW-oy1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lwx-if-FIM"/>
+                            <constraint firstItem="Axt-KP-Xm3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ndr-ie-e6V"/>
                             <constraint firstItem="je7-nW-oy1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nxX-S3-jWm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="je7-nW-oy1" secondAttribute="bottom" id="wUQ-70-6G0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="je7-nW-oy1" id="4Hw-k5-wMw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="68"/>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
         </scene>
     </scenes>
     <resources>
