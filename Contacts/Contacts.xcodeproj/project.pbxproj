@@ -47,6 +47,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		04562A6527C4E83200248720 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				047DD64927C2EE390031587A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		047DD63727C2EE380031587A = {
 			isa = PBXGroup;
 			children = (
@@ -66,11 +74,11 @@
 		047DD64227C2EE380031587A /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				04562A6527C4E83200248720 /* View */,
 				04562A6227C4128B00248720 /* Model */,
 				047DD64327C2EE390031587A /* AppDelegate.swift */,
 				047DD64527C2EE390031587A /* SceneDelegate.swift */,
 				047DD64727C2EE390031587A /* ViewController.swift */,
-				047DD64927C2EE390031587A /* Main.storyboard */,
 				047DD64C27C2EE4F0031587A /* Assets.xcassets */,
 				047DD64E27C2EE4F0031587A /* LaunchScreen.storyboard */,
 				047DD65127C2EE4F0031587A /* Info.plist */,
